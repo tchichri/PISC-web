@@ -6,24 +6,28 @@ import { FormattedMessage } from 'react-intl';
 const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
     <Link to={lang.link} key={lang.langKey} style={{
-      color: 'white'
+      color: '#000'
     }}>
-      <li selected={lang.selected}>
+      <li style={{display: "inline-block", margin: "0 6px"}} selected={lang.selected}>
         {lang.langKey}
       </li>
     </Link>
   );
 
   return (
-    <section>
-      <header style={{
-        color: 'white'
+    <section style={{
+        display: "flex",
       }}>
-        <FormattedMessage id="selectLanguage" />
+      <header style={{
+        color: '#000'
+        
+
+      }}>
+        <FormattedMessage  id="selectLanguage" />
+        <ul style={{margin: 0, display: "inline-block", listStyle: "none",}}>
+          {links}
+        </ul>
       </header>
-      <ul>
-        {links}
-      </ul>
     </section>
   );
 };

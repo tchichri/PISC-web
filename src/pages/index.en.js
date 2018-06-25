@@ -1,8 +1,20 @@
 import React from "react";
 import Link from "gatsby-link";
+import { FormattedMessage } from 'react-intl';
+import Helmet from "react-helmet";
+
+
 
 const IndexPage = () => (
   <div>
+    <Helmet
+      meta={[
+        { name: "description", content: "Sample" },
+        { name: "keywords", content: "sample, something" }
+      ]}
+    >
+        <title>4th edition “JUNGLE” 16 - 22 april</title>
+    </Helmet>
     <h1>The PISC Paris International Salsa Congress</h1>
 
     <p>
@@ -41,7 +53,9 @@ const IndexPage = () => (
       and let go, come and venture into our jungle around a common passion:
       dance!
     </p>
-    <a href="https://www.billetweb.fr/pisc-2019">Buy your PASS</a>
+    <div style={{textAlign: "center"}}>
+      <a style={{background:"#006158",fontSize: "22px", color: "white", textDecoration: "none", padding: "10px 16px", borderRadius: 4}} href="https://www.billetweb.fr/pisc-2019">Buy your PASS</a>  
+    </div>
   </div>
 );
 

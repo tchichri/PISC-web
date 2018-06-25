@@ -1,8 +1,19 @@
 import React from "react";
 import Link from "gatsby-link";
+import { FormattedMessage } from 'react-intl';
+import Helmet from "react-helmet";
+
 
 const IndexPage = () => (
   <div>
+    <Helmet
+      meta={[
+        { name: "description", content: "Sample" },
+        { name: "keywords", content: "sample, something" }
+      ]}
+    >
+        <title>4éme édition “JUNGLE” 16 - 22 avril</title>
+    </Helmet>
     <h1>Le PISC Paris International Salsa Congress</h1>
     <p>
       Le Paris International Salsa Congress, c&#39;est plus de 2000 danseurs
@@ -45,7 +56,9 @@ const IndexPage = () => (
       vraie nature et lâcher prise, venez vous aventurer dans notre jungle
       autour d&#39;une passion commune : la danse !
     </p>
-    <a href="https://www.billetweb.fr/pisc-2019">Achetez votre PASS</a>
+    <div style={{textAlign: "center"}}>
+      <a style={{background:"#006158",fontSize: "22px", color: "white", textDecoration: "none", padding: "10px 16px", borderRadius: 4}} href="https://www.billetweb.fr/pisc-2019">Achetez votre PASS</a>  
+    </div>
   </div>
 );
 

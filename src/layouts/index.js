@@ -1,9 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Cover from "../components/Cover";
 import Helmet from "react-helmet";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n";
 import { IntlProvider } from "react-intl";
+import { FormattedMessage } from 'react-intl';
 import "intl";
 import "./index.css";
 
@@ -13,8 +16,6 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const langKey = getCurrentLangKey(langs, defaultLangKey, url);
   const homeLink = `/${langKey}/`;
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url));
-
-  console.log('data ', data.background, data)
 
   return (
     <IntlProvider locale={langKey} messages={i18nMessages}>
@@ -28,9 +29,18 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           ]}
         >
           <html lang={langKey} />
-          <title>{"4th edition"}</title>
+          <FormattedMessage id="piscEdition">
+            {(txt) => (
+              <title>
+                {txt}
+              </title>
+            )}
+          </FormattedMessage>
+          {/* <FormattedMessage tagName="title" id="piscEdition" />
+          <title>{"4th edition"}</title> */}
         </Helmet>
         <Header langs={langsMenu} />
+        <Cover />
         <div
           style={{
             margin: "0 auto",
@@ -41,6 +51,7 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         >
           {children()}
         </div>
+        <Footer langs={langsMenu} />
       </div>
     </IntlProvider>
   );
@@ -62,5 +73,6 @@ export const pageQuery = graphql`
         }
       }
     }
+
   }
 `;
