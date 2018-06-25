@@ -45,9 +45,9 @@ const IndexPage = () => (
       différents ont tous une place et un rôle dans le règne animal.
     </p>
     <p>
-      Nous souhaitons cette année que le Pisc soit à l&#39;image de cette jungle
+      Nous souhaitons cette année que le PISC soit à l&#39;image de cette jungle
       ! Réveillons l&#39;instinct primaire qui sommeille en nous... et qui se
-      révèle sur la piste de danse au son des musiques salsa, Bachata ou Kizomba
+      révèle sur la piste de danse au son des musiques Salsa, Bachata ou Kizomba
       !
     </p>
 
