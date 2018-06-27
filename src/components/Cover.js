@@ -8,9 +8,9 @@ const Cover = props => (
   <div
     style={{
       // background: "#006158",
-      marginTop: "-1.45rem",
+      // marginTop: "-1.45rem",
       marginBottom: "1.45rem",
-      height: "calc(100vh - 111px)",
+      height: "100vh",
       backgroundImage: `url(${imgCover})`,
       // backgroundImage: `url(${imgCover02})`,
       backgroundRepeat: "no-repeat",

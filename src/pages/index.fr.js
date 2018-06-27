@@ -1,20 +1,29 @@
 import React from "react";
 import Link from "gatsby-link";
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 import Helmet from "react-helmet";
-
 
 const IndexPage = () => (
   <div>
     <Helmet
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        {
+          name: "description",
+          content:
+            "Le Paris International Salsa Congress, c'est plus de 2000 danseurs passionnés et généreux venant des quatre coins de la planète pour se rassembler et partager leur amour des danses latines : salsa, bachata et kizomba !"
+        },
+        {
+          name: "keywords",
+          content:
+            "Salsa, bachata, kizomba, mambo, salsa congress, salsa festival"
+        }
       ]}
     >
-        <title>4éme édition “JUNGLE” 16 - 22 avril</title>
+      <title>4éme édition “JUNGLE” 16 - 22 avril</title>
     </Helmet>
-    <h1>Le PISC Paris International Salsa Congress</h1>
+    <h1 style={{ textAlign: "center", color: "#006158" }}>
+      Le PISC<br /> Paris International Salsa Congress
+    </h1>
     <p>
       Le Paris International Salsa Congress, c&#39;est plus de 2000 danseurs
       passionnés et généreux venant des quatre coins de la planète pour se
@@ -33,7 +42,9 @@ const IndexPage = () => (
       Professionnel, Accueillant, Réjouissant, Innovant et Somptueux.
     </p>
 
-    <h2>En 2019, l&#39;édition du PISC est « JUNGLE »</h2>
+    <h2 style={{ textAlign: "center", color: "#006158" }}>
+      En 2019, l&#39;édition du PISC est « JUNGLE »
+    </h2>
     <p>
       Nous sommes si nombreux et chacun si différents. Chaque individu a sa
       propre identité : un patrimoine, un caractère, une histoire, une culture,
@@ -56,8 +67,20 @@ const IndexPage = () => (
       vraie nature et lâcher prise, venez vous aventurer dans notre jungle
       autour d&#39;une passion commune : la danse !
     </p>
-    <div style={{textAlign: "center"}}>
-      <a style={{background:"#006158",fontSize: "22px", color: "white", textDecoration: "none", padding: "10px 16px", borderRadius: 4}} href="https://www.billetweb.fr/pisc-2019">Achetez votre PASS</a>  
+    <div style={{ textAlign: "center", marginTop: "3.45rem" }}>
+      <a
+        style={{
+          background: "#006158",
+          fontSize: "22px",
+          color: "white",
+          textDecoration: "none",
+          padding: "10px 16px",
+          borderRadius: 4
+        }}
+        href="https://www.billetweb.fr/pisc-2019"
+      >
+        Achetez votre PASS
+      </a>
     </div>
   </div>
 );

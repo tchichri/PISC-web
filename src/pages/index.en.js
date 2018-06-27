@@ -1,21 +1,29 @@
 import React from "react";
 import Link from "gatsby-link";
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 import Helmet from "react-helmet";
-
-
 
 const IndexPage = () => (
   <div>
     <Helmet
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        {
+          name: "description",
+          content:
+            "The Paris International Salsa Congress, it’s more than 2000 passionnate and generous dancers coming from all over the world to gather and share their Love of the Latin dances such as salsa, bachata and kizomba !"
+        },
+        {
+          name: "keywords",
+          content:
+            "Salsa, bachata, kizomba, mambo, salsa congress, salsa festival"
+        }
       ]}
     >
-        <title>4th edition “JUNGLE” 16 - 22 april</title>
+      <title>4th edition “JUNGLE” 16 - 22 april</title>
     </Helmet>
-    <h1>The PISC Paris International Salsa Congress</h1>
+    <h1 style={{ textAlign: "center", color: "#006158" }}>
+      The PISC <br /> Paris International Salsa Congress
+    </h1>
 
     <p>
       The Paris International Salsa Congress, it’s more than 2000 passionnate
@@ -33,7 +41,9 @@ const IndexPage = () => (
       Professionnal, Amusing, Responsive, Innovating and Somptuous.
     </p>
 
-    <h2>In 2019, the PISC edition is « JUNGLE »</h2>
+    <h2 style={{ textAlign: "center", color: "#006158" }}>
+      In 2019, the PISC edition is « JUNGLE »
+    </h2>
     <p>
       We are so many and each so different. Each individual has his own
       identity: a heritage, a character, a story, a culture, a physical, a style
@@ -53,8 +63,20 @@ const IndexPage = () => (
       and let go, come and venture into our jungle around a common passion:
       dance!
     </p>
-    <div style={{textAlign: "center"}}>
-      <a style={{background:"#006158",fontSize: "22px", color: "white", textDecoration: "none", padding: "10px 16px", borderRadius: 4}} href="https://www.billetweb.fr/pisc-2019">Buy your PASS</a>  
+    <div style={{ textAlign: "center", marginTop: "3.45rem" }}>
+      <a
+        style={{
+          background: "#006158",
+          fontSize: "22px",
+          color: "white",
+          textDecoration: "none",
+          padding: "10px 16px",
+          borderRadius: 4
+        }}
+        href="https://www.billetweb.fr/pisc-2019"
+      >
+        Buy your PASS
+      </a>
     </div>
   </div>
 );

@@ -23,10 +23,6 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
         <Helmet
           defaultTitle="Paris International Salsa Congress 2019"
           titleTemplate="%s | Paris International Salsa Congress 2019"
-          meta={[
-            { name: "description", content: "Sample" },
-            { name: "keywords", content: "sample, something" }
-          ]}
         >
           <html lang={langKey} />
           <FormattedMessage id="piscEdition">
@@ -36,8 +32,6 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
               </title>
             )}
           </FormattedMessage>
-          {/* <FormattedMessage tagName="title" id="piscEdition" />
-          <title>{"4th edition"}</title> */}
         </Helmet>
         <Header langs={langsMenu} />
         <Cover />
@@ -45,13 +39,13 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           style={{
             margin: "0 auto",
             maxWidth: 1200,
-            padding: "0px 1.0875rem 1.45rem",
+            padding: "0px 1.0875rem 6.45rem",
             paddingTop: 0
           }}
         >
           {children()}
         </div>
-        <Footer langs={langsMenu} />
+        {/* <Footer langs={langsMenu} /> */}
       </div>
     </IntlProvider>
   );
