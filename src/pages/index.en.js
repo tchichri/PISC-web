@@ -54,7 +54,7 @@ const IndexPage = () => (
       all have a place and a role in the animal kingdom.
     </p>
     <p>
-      We wish this year that the Pisc is like this jungle! Let&#39;s wake up to
+      We wish this year that the PISC is like this jungle! Let&#39;s wake up to
       the primary instinct that lies dormant in us ... and which is revealed on
       the dance floor to the sound of salsa, Bachata or Kizomba music!
     </p>
