@@ -7,7 +7,6 @@ const NotFoundPage = () => (
     <FormattedMessage id="notFound" tagName="h1" />
     <FormattedMessage id="notFound_desc" tagName="p" />
     <Link to="/">Back home</Link>
-    {/* <p>You just hit a route that doesn&#39;t exist... the sadness.</p> */}
   </div>
 );
 

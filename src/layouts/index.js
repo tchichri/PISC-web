@@ -6,9 +6,11 @@ import Cover from "../components/Cover";
 import Helmet from "react-helmet";
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n";
 import { IntlProvider } from "react-intl";
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage } from "react-intl";
 import "intl";
 import "./index.css";
+
+import ScreenTemp from "../assets/pisc-website-temp.jpg";
 
 const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
   const url = location.pathname;
@@ -25,13 +27,23 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           titleTemplate="%s | Paris International Salsa Congress 2019"
         >
           <html lang={langKey} />
-          <FormattedMessage id="piscEdition">
-            {(txt) => (
-              <title>
-                {txt}
-              </title>
-            )}
-          </FormattedMessage>
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://parissalsacongress.com" />
+          <meta
+            property="og:image"
+            content={ScreenTemp}
+          />
+
+          <link rel="canonical" href="https://parissalsacongress.com" />
+
+          {langs.map(locale => (
+            <link
+              rel="alternate"
+              href={`https://parissalsacongress.com/${locale}`}
+              hrefLang={locale}
+              key={`alternateLink-${locale}`}
+            />
+          ))}
         </Helmet>
         <Header langs={langsMenu} />
         <Cover />
@@ -39,13 +51,13 @@ const TemplateWrapper = ({ children, data, location, i18nMessages }) => {
           style={{
             margin: "0 auto",
             maxWidth: 1200,
-            padding: "0px 1.0875rem 6.45rem",
+            padding: "0px 1.0875rem 4.45rem",
             paddingTop: 0
           }}
         >
           {children()}
         </div>
-        {/* <Footer langs={langsMenu} /> */}
+        <Footer langs={langsMenu} />
       </div>
     </IntlProvider>
   );
@@ -67,6 +79,5 @@ export const pageQuery = graphql`
         }
       }
     }
-
   }
 `;

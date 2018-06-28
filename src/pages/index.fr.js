@@ -13,6 +13,15 @@ const IndexPage = () => (
             "Le Paris International Salsa Congress, c'est plus de 2000 danseurs passionnés et généreux venant des quatre coins de la planète pour se rassembler et partager leur amour des danses latines : salsa, bachata et kizomba !"
         },
         {
+          property: "og:description",
+          content:
+            "The Paris International Salsa Congress, it’s more than 2000 passionnate and generous dancers coming from all over the world to gather and share their Love of the Latin dances such as salsa, bachata and kizomba !"
+        },
+        {
+          property: "og:title",
+          content: "4éme édition “JUNGLE” 16 - 22 avril | Paris International Salsa Congress 2019"
+        },
+        {
           name: "keywords",
           content:
             "Salsa, bachata, kizomba, mambo, salsa congress, salsa festival"
@@ -58,7 +67,7 @@ const IndexPage = () => (
     <p>
       Nous souhaitons cette année que le PISC soit à l&#39;image de cette jungle
       ! Réveillons l&#39;instinct primaire qui sommeille en nous... et qui se
-      révèle sur la piste de danse au son des musiques salsa, Bachata ou Kizomba
+      révèle sur la piste de danse au son des musiques Salsa, Bachata ou Kizomba
       !
     </p>
 

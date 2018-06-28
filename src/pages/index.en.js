@@ -13,6 +13,15 @@ const IndexPage = () => (
             "The Paris International Salsa Congress, it’s more than 2000 passionnate and generous dancers coming from all over the world to gather and share their Love of the Latin dances such as salsa, bachata and kizomba !"
         },
         {
+          property: "og:description",
+          content:
+            "The Paris International Salsa Congress, it’s more than 2000 passionnate and generous dancers coming from all over the world to gather and share their Love of the Latin dances such as salsa, bachata and kizomba !"
+        },
+        {
+          property: "og:title",
+          content: "4th edition “JUNGLE” 16 - 22 april | Paris International Salsa Congress 2019"
+        },
+        {
           name: "keywords",
           content:
             "Salsa, bachata, kizomba, mambo, salsa congress, salsa festival"
@@ -56,7 +65,7 @@ const IndexPage = () => (
     <p>
       We wish this year that the PISC is like this jungle! Let&#39;s wake up to
       the primary instinct that lies dormant in us ... and which is revealed on
-      the dance floor to the sound of salsa, Bachata or Kizomba music!
+      the dance floor to the sound of Salsa, Bachata or Kizomba music!
     </p>
     <p>
       If like us, you want to explore these differences, reveal your true nature
