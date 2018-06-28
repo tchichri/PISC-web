@@ -26,7 +26,7 @@ const Footer = props => (
       }}
     >
       <p style={{ color: "#fff", fontSize: "14px" }}>
-        Copyright (c) 2016 - 2018 Paris International Salsa Congress
+        Copyright (c) 2016 - 2018 Paris International Salsa Congress.
       </p>
       <div>
         <a
